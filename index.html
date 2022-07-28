@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <button onclick="scale('false')"><i class="fa fa-search-minus"></i></button>
+        <button onclick="scale('true')"><i class="fa fa-search-plus"></i></button>
+    </div>
+    <div class="calculator">
+        <div class='sec-div'>
+            <div class="input-div">
+                <input type="text" id="screen" placeholder="0" disabled>
+            </div>
+            <div class="button-div">
+                <button class="sci-sign">!</button>
+                <button class="sci-sign" onclick="scienfic('3.142')">pi</button>
+                <button class="sci-sign">In</button>
+                <button class="sci-sign">jn</button>
+                <button class="sci-sign" onclick="operator('e')">Exp</button>
+                <button class="sci-sign" onclick="operator('^')">xʸ</button>
+                <button class="sci-sign" onclick="scienfic('sin')">sin</button>
+                <button class="sci-sign" onclick="scienfic('cos')">cos</button>
+                <button class="sci-sign" onclick="scienfic('tan')">tan</button>
+                <button class="sci-sign" onclick="scienfic('log')">log</button>
+                <button class="sci-sign" onclick="scienfic('sqrt')">sqrt</button>
+                <button class="sci-sign" onclick="scienfic('³')">x³</button>
+                <button class="sci-sign" onclick="scienfic('²')">x²</button>
+                <button class="sci-sign" onclick="operator('(')">(</button>
+                <button class="sci-sign" onclick="operator(')')">)</button>
+                <button class="numbers" onclick="number(7)">7</button>
+                <button class="numbers" onclick="number(8)">8</button>
+                <button class="numbers" onclick="number(9)">9</button>
+                <button class="clrBtn" onclick="clr()">CLR</button>
+                <button class="delBbtn" onclick="del()">DEL</button>
+                <button class="numbers" onclick="number(4)">4</button>
+                <button class="numbers" onclick="number(5)">5</button>
+                <button class="numbers" onclick="number(6)">6</button>
+                <button class="mathSign" onclick="operator('÷')">÷</button>
+                <button class="mathSign" onclick="operator('×')">×</button>
+                <button class="numbers" onclick="number(1)">1</button>
+                <button class="numbers" onclick="number(2)">2</button>
+                <button class="numbers" onclick="number(3)">3</button>
+                <button class="mathSign" onclick="operator('+')">+</button>
+                <button class="mathSign" onclick="operator('-')">-</button>
+                <button class="numbers" onclick="number(0)">0</button>
+                <button class="numbers" onclick="number('.')">•</button>
+                <button class="numbers" onclick="number('00')">00</button>
+                <button class="mathSign" onclick="prevAns()">Ans</button>
+                <button class="equalTo" onclick="equalTo()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+<script>
+
+    let scale_val = 0;
+    // function scale(flag) {
+    //     if (flag == 'true') {
+    //         (scale_val > 2) ? scale_val = 2 : scale_val + 0.3;
+    //         main.style.transform = `scale(${scale_val})`;
+    //         return;
+    //     } else {
+    //         (scale_val < 0) ? scale_val = 0 : scale_val - 0.3;
+    //         main.style.transform = `scale(${scale_val})`;
+    //         return;
+    //     }
+
+    // }
+
+</script>
+
+</html>

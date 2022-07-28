@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+.calculator {
+    width: 90%;
+    min-width: 300px;
+    max-width: 20rem;
+    margin: 10px auto;
+    background-color: black;
+    box-shadow: inset 0px 0px 27px 4px dimgray;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+}
+.sec-div {
+    padding: 2px;
+    background-color: rgb(68, 64, 58);
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 21px 2px rgb(26, 24, 24);
+}
+.input-div {
+    padding: 4px 0px;
+    text-align: center;
+}
+.input-div input {
+    width: 90%;
+    text-align: right;
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid rgb(207, 202, 190);
+    padding: 5px 7px 5px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    height: 10vw;
+    max-height: 45px;
+    min-height: 35px;
+}
+.button-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 5px;
+}
+.button-div button {
+    width: 18.4%;
+    height: 10vw;
+    max-height: 45px;
+    min-height: 25px;
+    outline: none;
+}
+.sci-sign {
+    max-height: 30px !important;
+    padding: 0px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    font-size: 14px;
+    background-color: rgb(124, 93, 93);
+    margin: 2px;
+    color: rgb(248, 248, 250);
+}
+.sci-sign:hover, .sci-sign:focus {
+    background-color: rgb(105, 81, 81);
+    border: 2px solid rgb(104, 91, 91);
+}
+.numbers, .mathSign, .equalTo, .delBbtn, .clrBtn {
+    border: 1px outset rgb(134, 228, 207);
+    border-radius: 4px;
+    margin: 2px;
+    padding: 6px 0px;
+    background-color: rgb(248, 252, 251);
+    font-size: 16px;
+    font-weight: 500;
+}
+.delBbtn {
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border: red;
+    padding: 5px;
+}
+.delBbtn:hover, .delBbtn:focus {
+    background-color: rgb(212, 7, 7);
+    border: 1px outset rgb(172, 4, 4);
+}
+.clrBtn {
+    border: 1px outset rgb(142, 158, 51);
+    background-color: rgb(183, 202, 76);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.clrBtn:hover, .clrBtn:focus {
+    background-color: rgb(145, 156, 83);
+}
+.numbers:hover {
+    background-color: rgb(219, 223, 230);
+    border: 1px inset;
+    color: rgb(255, 255, 255);
+}
+.mathSign {
+    border: 1px outset rgb(23, 47, 92);
+    background-color: rgb(146, 77, 163);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    color: white;
+}
+.mathSign:hover, .mathSign:focus {
+    background-color: rgb(97, 45, 110);
+}
+.equalTo {
+    background-color: rgb(91, 180, 101);
+    border: 2px outset rgb(38, 180, 126);
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.equalTo:hover, .equalTo:focus {
+    background-color: rgb(68, 134, 76);
+    border-color: rgb(58, 116, 64);
+}
